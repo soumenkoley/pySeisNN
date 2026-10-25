@@ -1,0 +1,49 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Local Python and Conda environments
+.venv/
+venv/
+env/
+.conda/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Logs and process files
+*.log
+*.pid
+*.out
+*.err
+
+# Generated pySeisNN and Qseis run directories
+AllTutOut/
+QseisInpN/
+OutDisp/
+OutDispRea/
+
+# Coverage and build products
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*~
+*.swp
+.DS_Store
+Thumbs.db
+
