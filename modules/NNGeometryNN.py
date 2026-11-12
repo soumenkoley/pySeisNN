@@ -1427,9 +1427,10 @@ def partitionLayers(z_interfaces, vp, vs, rho, cubeTop, cubeBot, max_host_thickn
 
     cav_span = cubeBot - cubeTop
     if max_host_thickness + tol < cav_span:
-        raise ValueError(
-            f"max_host_thickness ({max_host_thickness}) must be >= cavity span ({cav_span})"
-        )
+        max_host_thickness = cav_span + tol
+        #raise ValueError(
+        #    f"max_host_thickness ({max_host_thickness}) must be >= cavity span ({cav_span})"
+        #)
 
     def overlaps_cavity(z0, z1):
         # overlap with [cubeTop, cubeBot]
